@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Uma Surpresa Para Você 💕</title>
+    
+    <!-- Google Fonts - Fontes Românticas -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container Principal -->
+    <div class="container">
+        
+        <!-- Seção 1: Tela Inicial com Botão -->
+        <div id="tela-inicial" class="tela-inicial">
+            <div class="content-inicial">
+                <h1 class="titulo-inicial">💕</h1>
+                <p class="mensagem-inicial">Eu tenho uma surpresa para você...</p>
+                <button id="btn-abrir" class="btn-abrir">
+                    Clique aqui ❤️
+                </button>
+                <p class="dica-inicial">⬇️ Toque para continuar ⬇️</p>
+            </div>
+        </div>
+
+        <!-- Seção 2: Mensagem Romântica Revelada -->
+        <div id="tela-surpresa" class="tela-surpresa hidden">
+            
+            <!-- Botão Voltar -->
+            <button id="btn-voltar" class="btn-voltar">← Voltar</button>
+
+            <!-- Mensagem com Efeito de Digitação -->
+            <div class="card-surpresa">
+                <h2 class="titulo-surpresa">Para você... 💌</h2>
+                
+                <!-- Espaço para Foto do Casal -->
+                <div class="foto-container">
+                    <img id="foto-casal" src="https://via.placeholder.com/300x300?text=Nossa+Foto" alt="Foto do casal" class="foto-casal">
+                    <p class="texto-foto">📸 Nossa história juntos</p>
+                </div>
+
+                <!-- Mensagem Principal com Digitação -->
+                <div class="mensagem-principal">
+                    <p id="texto-digitado" class="texto-animado"></p>
+                </div>
+
+                <!-- Mensagem Secundária -->
+                <div class="mensagem-secundaria">
+                    <p class="fade-in-delay-1">Você é a melhor coisa que já me aconteceu.</p>
+                    <p class="fade-in-delay-2">Obrigado por ser meu ❤️</p>
+                </div>
+
+                <!-- Botões de Ação -->
+                <div class="botoes-acao">
+                    <button id="btn-musica" class="btn-musica">🎵 Música (on/off)</button>
+                    <button id="btn-final" class="btn-final">Ver Surpresa Final ✨</button>
+                </div>
+
+                <!-- Áudio de Fundo (oculto) -->
+                <audio id="musica-fundo" preload="auto" loop>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Corações Flutuantes -->
+            <div class="coraces-container"></div>
+        </div>
+
+        <!-- Seção 3: Surpresa Final -->
+        <div id="tela-final" class="tela-final hidden">
+            <button id="btn-voltar-final" class="btn-voltar">← Voltar</button>
+            
+            <div class="card-final">
+                <h1 class="titulo-final">Você é meu para sempre 💍</h1>
+                <p class="subtitulo-final">Te amo infinito ∞</p>
+                
+                <!-- Efeito de Confete -->
+                <div class="confete-container" id="confete"></div>
+                
+                <!-- Mensagem Extra -->
+                <div class="mensagem-extra">
+                    <p class="linha-1">Cada dia ao seu lado</p>
+                    <p class="linha-2">É uma benção</p>
+                    <p class="linha-3">E você é meu maior tesouro 💎</p>
+                </div>
+
+                <!-- Botão Voltar ao Início -->
+                <button id="btn-inicio" class="btn-inicio">Recomeçar ↻</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
